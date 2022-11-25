@@ -9,6 +9,30 @@ import { VegComponent } from './veg/veg.component';
 import { NonVegComponent } from './non-veg/non-veg.component';
 import { SnacksComponent } from './snacks/snacks.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:LoginComponent
+  },
+  {
+    path:"add",
+    component:UserRegComponent
+  },
+  {
+    path:"veg",
+    component:VegComponent
+  },
+  {
+    path:"non",
+    component:NonVegComponent
+  },
+  {
+    path:"snacks",
+    component:SnacksComponent
+  },
+]
 
 @NgModule({
   declarations: [
@@ -22,7 +46,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
