@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
 import { VegComponent } from './veg/veg.component';
 import { NonVegComponent } from './non-veg/non-veg.component';
+import { SnacksComponent } from './snacks/snacks.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NonVegComponent } from './non-veg/non-veg.component';
     LoginComponent,
     UserRegComponent,
     VegComponent,
-    NonVegComponent
+    NonVegComponent,
+    SnacksComponent
   ],
   imports: [
     BrowserModule,
