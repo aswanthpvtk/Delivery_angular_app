@@ -5,38 +5,38 @@
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">First name:</label>
-                    <input type="text" class="form-control">
+                    <input name="fname" [(ngModel)]="fname" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">last name:</label>
-                    <input type="text" class="form-control">
+                    <input name="lname" [(ngModel)]="lname" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="fomr-label">Address:</label>
-                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                    <textarea name="address" [(ngModel)]="address" id="" cols="30" rows="5" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Phone Number:</label>
-                    <input type="text" class="form-control">
+                    <input name="pno" [(ngModel)]="pno" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Email:</label>
-                    <input type="email" class="form-control">
+                    <input name="email" [(ngModel)]="email" type="email" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Username:</label>
-                    <input type="text" class="form-control">
+                    <input name="uname" [(ngModel)]="uname" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Password:</label>
-                    <input type="text" class="form-control">
+                    <input name="psw" [(ngModel)]="psw" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Confirm Password:</label>
-                    <input type="text" class="form-control">
+                    <input name="cpsw" [(ngModel)]="cpsw" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-primary">Register</button>
+                    <button (click)="readValues()" class="btn btn-primary">Register</button>
                 </div>
             </div>
         </div>
