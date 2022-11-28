@@ -9,17 +9,17 @@
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                         <label for="" class="form-label">Username:</label>
-                        <input type="text" class="form-control">
+                        <input name="uname" [(ngModel)]="uname" type="text" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         
                         <label for="" class="form-label">password:</label>
-                        <input type="password" class="form-control">
+                        <input name="psw" [(ngModel)]="psw" type="password" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                        <button class="btn btn-success">Login</button>
+                        <button (click)="readValues()" class="btn btn-success">Login</button>
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                         <a href="/add" class="btn btn-primary">User registration</a>
